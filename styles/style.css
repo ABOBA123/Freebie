@@ -1,29 +1,24 @@
-
-.slide{
+.first-slide{
     width: 100%;
-    height: 100vh;
-
-    position: relative;
-    z-index: 0;
+    height: 910px;
+    background-color:  #F4F4F4;
+}
+.slide{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;    
 }
-.left-part{
-    width: 900px;
-    height: 905px;
 
-    margin-left: 50px;
-}
+
 .header{
-    width: 800px;
+    width: 600px;
     height: 100px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    left: 0;
-    top: 0;
+
 }
 .header p{
     font-size: 22px;
@@ -44,11 +39,14 @@
     height: 905px;
     position: relative;
     background-color: black;
+    display: flex;
+    flex-direction: row;
 
     bottom: 10px;
     z-index: 0;
 }
 .line-first{
+    max-width: 650px;
     position: relative;
     margin-top: 200px;
     margin-left: 56px;
@@ -103,4 +101,69 @@ top: 10px;
 left: 30%;
 position: absolute;
 z-index: 4;
+}
+
+.third-slide{
+    width: 100%;
+    height: 600px;   
+    background:  #F4F4F4;
+    display: flex;
+    flex-direction: row;
+
+}
+.left-slide{
+    width: 600px;
+    
+    
+}
+.grey-block{
+    width: 100%;
+}
+.slider{
+    width: 250px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.slider button{
+    width: 50px;
+    height: 10px;
+    
+    display: flex;
+    flex-direction: row;
+}
+.right-slide{
+    width: 1200px;
+    height: 905px;
+
+}
+.three-button{
+ width: 1200px;
+ height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   margin-top: 100px;
+
+   animation: Entry-block 3s linear 1 alternate 0s forwards;
+}
+.three-button button{
+    width: 250px;
+    height: 350px;
+
+    border-radius: 5%;
+    /* animation-name: Entry-block;
+    animation-duration: 5s; */
+}
+@keyframes Entry-block {
+    0%{
+       margin-left: 1200px;
+
+    }
+    100%{
+        margin-left: 150px;
+
+    }
 }
