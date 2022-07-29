@@ -108,9 +108,10 @@ padding: 20px;
     .color-FFF{
         background-color: #FFFFFF;
     }
-    .backgraund-green{
-        background-color: green;
+    .backgraund-black{
+        background-color: black;
     }
     .flex-diar-row{
         flex-direction: row;
     }
+    
