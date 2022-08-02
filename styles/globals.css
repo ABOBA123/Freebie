@@ -1,17 +1,15 @@
 body {
   font-family: "Source Code Pro", monospace;
+	margin: 0;
+  
 }
-/* .slide{
+.slide{
     width: 100%;
-    height: 905px;
- right: 8px;
- bottom: 8px;
- 
-
-} */
+    height: 100vh;
+}
 .left-part {
   width: 50%;
-  height: 100%;
+  height: 100vh;
 }
 .mrgin-left-50 {
   margin-left: 50px;
@@ -33,8 +31,8 @@ body {
 }
 .big-text {
   font-weight: 400;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 60px;
+  line-height: 70px;
 }
 .litle-text {
   font-weight: 500;
@@ -55,16 +53,22 @@ body {
   align-items: center;
 
   padding: 20px;
+  transition: 0.5s all;
 }
 .black-button button:hover {
-  transition-duration: 1s;
   box-shadow: 1px 5px 10px 2px rgb(0, 0, 0);
   /* transform: scale(1.1,1.1); */
 }
 .fat-text {
   font-weight: 700;
   font-size: 50px;
-  line-height: 50px;
+  line-height: 60px;
+
+  
+}
+.margin-auto{
+  margin: auto;
+
 }
 .top-90 {
   margin-top: 90px;
@@ -81,6 +85,9 @@ body {
 .border-none {
   border: none;
   outline: none;
+}
+.flex-row{
+  flex-direction: row;
 }
 .vector {
   width: 40px;
@@ -109,4 +116,30 @@ body {
 }
 .flex-diar-row {
   flex-direction: row;
+}
+.right-0{
+  right: 0;
+}
+.top-0{
+  top:0;
+
+}
+.top-300{
+  top: 300px;
+}
+.margin-auto{
+  margin: auto;
+}
+.margin-top{
+  margin-top: 200px;
+}
+.margin-left-200{
+  margin-left: 200px;
+}
+.flex-diar-colum{
+  display: flex;
+  flex-direction: column;
+}
+.font-size-5{
+  font-size: 5px;
 }

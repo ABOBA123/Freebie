@@ -24,4 +24,48 @@
         right: 0;
         left: 30px;
     }
+    .header{
+        width: 500px;
+        height: 100px;
+    }
+    .header p{
+        font-size: 18px;
+        font-weight: 200px;
+    }
+}
+@media screen and (max-width: 780px){
+    .first-slide{
+        height: 100vh;
+    }
+    .left-part {
+        width: 50%;
+        height: 100vh;
+    }
+    .right-part{
+        width: 50%;
+        height: 100vh;
+    }
+
+    .big-text{
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    .big-text p{
+        padding: 0;
+        margin: 0;  
+    }
+    .list{
+        right: 0;
+        left: 30px;
+    }
+    .header{
+        width: 500px;
+        height: 100px;
+    }
+    .header p{
+        font-size: 18px;
+        font-weight: 200px;
+    }
+    
 }

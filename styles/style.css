@@ -1,12 +1,15 @@
-.first-slide {
+
+.first-slide{
   width: 100%;
   height: 100vh;
   background-color: #f4f4f4;
+
+  
 }
 .slide {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  /* justify-content: center; */
+  /* flex-direction: row; */
 }
 
 .header {
@@ -22,9 +25,7 @@
   font-size: 22px;
   font-weight: 250px;
 }
-.big-text {
-  margin-bottom: 100px;
-}
+
 .line-3 {
   width: 20px;
   height: 20px;
@@ -34,38 +35,42 @@
 }
 .right-part {
   width: 50%;
-  height: 100%;
+  height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: row;
+
 
   bottom: 10px;
   z-index: 0;
 }
 .line-first {
-  max-width: 650px;
-  position: relative;
+  width: 650px;
+  margin-left:123px ;
   margin-top: 200px;
-  margin-left: 56px;
-  z-index: 0;
+  right: 0;
+  bottom: 0;
 }
 .list {
   position: absolute;
   z-index: 1;
   bottom: 50px;
-  right: 300px;
+  right: 250px;
 }
 .men {
   position: absolute;
   z-index: 2;
-  bottom: 1px;
-  left: 140px;
+  bottom: 0;
+  right: 100px;
+  opacity: 0;
+}
+.men-active{
+  transition: 0.5s all;
+  opacity: 1;
 }
 .Vector {
   position: absolute;
   z-index: 3;
-  left: 380px;
-  top: 730px;
+  top: 600px;
+  right: 100px;
 }
 .line-4 {
   position: absolute;
@@ -80,7 +85,7 @@
   backdrop-filter: blur(15px);
   position: absolute;
   z-index: 4;
-  top: 838px;
+  bottom: 0;
   color: aliceblue;
 }
 .redlap {
@@ -157,6 +162,42 @@
   animation: Entry-block-back 0.5s ease-out 1 alternate 0s forwards;
   /* display: none; */
 }
+.off_fat-text{
+  opacity: 1;
+  animation: Animation-text 1s ease-out 1 alternate 0s forwards;
+
+}
+
+.backgraund-green{
+  background-color: green;
+}
+.slide-3{
+  display: flex;
+  position: relative;
+  
+}
+.window-2{
+margin-top: 100px;
+margin-left: 20%;
+}
+.yellow-tabl{
+top: 50%;
+left: 45%;
+
+  position: absolute;
+  z-index: 2;
+}
+.al-cen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.container{
+  width: 100%;
+  height: 300px;
+
+}
 @keyframes Entry-block {
   0% {
     margin-left: 600px;
@@ -172,5 +213,13 @@
   }
   100% {
     margin-left: 600px;
+  }
+}
+@keyframes Animation-text{
+  0%{
+    margin-top:150px;
+  }
+  100%{
+    margin-top:80px;
   }
 }
