@@ -1,9 +1,17 @@
 @media screen and (max-width: 1140px) {
     .first-slide{
-        max-width: 1140px;
         width: 100%;
-        margin: 0 auto;
-        padding: 5px;
+        height: 100%;
+     
+        position: relative;
+        top: 0;
+        left: 0;
+        
+     
+        background-color: #f4f4f4;
+        background-repeat: no-repeat;
+        background-clip: inherit;
+        background-size: 100%;
     }
     .left-part {
        width: 50%;
