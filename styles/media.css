@@ -1,141 +1,137 @@
 @media screen and (max-width: 1140px) {
-    .first-slide{
-        width: 100%;
-        height: 100%;
-     
-        position: relative;
-        top: 0;
-        left: 0;
-        
-     
-        background-color: #f4f4f4;
-        background-repeat: no-repeat;
-        background-clip: inherit;
-        background-size: 100%;
-    }
-    .line-first{
-        width: 550px;
-        height: 480px;
-    }
-    .list{
-        width: 900px;
-        height: 400px;
+  .first-slide {
+    width: 100%;
+    height: 100%;
 
-    }
-    .men{
-        width: 480px;
-        height: 100vh;
-        right: 4px;
-    }
-    .Vector{
-        position: absolute;
-        z-index: 3;
-        width: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
 
-    }
-    .Name{
-        width: 276px;
-        height: 47px;
-        font-size: 5px;
-    }
-    .Name li {
-        font-size: 20px;
-      }
-    .left-part {
-       width: 50%;
-        height: 100vh;
-    }
-    .right-part{
-        width: 50%;
-        height: 100vh;
-    }
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-size: 100%;
+  }
+  .line-first {
+    width: 550px;
+    height: 480px;
+  }
+  .list {
+    width: 500px;
+    /* height: 400px; */
+    left: -150px;
+  }
+  .men {
+    width: 480px;
+    /* height: 100vh; */
+    right: 4px;
+  }
+  .Vector {
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    /* top: 40%; */
+    /* top: 0; */
+    bottom: -10%;
+  }
+  .Name {
+    width: 276px;
+    height: 47px;
+    font-size: 5px;
+  }
+  .Name li {
+    font-size: 20px;
+  }
+  .left-part {
+    width: 50%;
+    height: 100vh;
+  }
+  .right-part {
+    width: 50%;
+    height: 100vh;
+  }
 
-    .big-text{
-        font-size: 36px;
-        margin-bottom: 20px;
-        line-height: 50px;
-    }
-    .big-text p{
-        padding: 0;
-        margin: 0;  
-    }
-    .list{
-        right: 0;
-        left: 30px;
-    }
-    .header{
-        width: 500px;
-        height: 100px;
-    }
-    .header p{
-        font-size: 18px;
-        font-weight: 200px;
-    }
-    .fat-text{
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 40px;
-    }
+  .big-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 50px;
+  }
+  .big-text p {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    width: 500px;
+    height: 100px;
+  }
+  .header p {
+    font-size: 18px;
+    font-weight: 200px;
+  }
+  .fat-text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-    .three-button{
-        width: 840px;
-        height: 350px;
-    }
-    .three-button button{
-        width: 257px;
-        height: 257px;
-      
-        border-radius: 5%;
-    }
-    .window-2{
-        width: 500px;
-        height: 400px;
-    }
-    .yellow-tabl{
-        width: 130px;
-        height: 130px;
-    }
-    .text-big{
-        font-size: 15px;
-    }
-    .little-text{
-        font-size: 13px;
-        font-weight: 400;
-    }
+  .three-button {
+    width: 840px;
+    height: 350px;
+  }
+  .three-button button {
+    width: 257px;
+    height: 257px;
+
+    border-radius: 5%;
+  }
+  .window-2 {
+    width: 500px;
+    height: 400px;
+  }
+  .yellow-tabl {
+    width: 130px;
+    height: 130px;
+  }
+  .text-big {
+    font-size: 15px;
+  }
+  .little-text {
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
-@media screen and (max-width: 780px){
-    .first-slide{
-        height: 100vh;
-    }
-    .left-part {
-        width: 50%;
-        height: 100vh;
-    }
-    .right-part{
-        width: 50%;
-        height: 100vh;
-    }
+@media screen and (max-width: 780px) {
+  .first-slide {
+    height: 100vh;
+  }
+  .left-part {
+    width: 50%;
+    height: 100vh;
+  }
+  .right-part {
+    width: 50%;
+    height: 100vh;
+  }
 
-    .big-text{
-        font-size: 26px;
-        margin-bottom: 10px;
-        line-height: 30px;
-    }
-    .big-text p{
-        padding: 0;
-        margin: 0;  
-    }
-    .list{
-        right: 0;
-        left: 30px;
-    }
-    .header{
-        width: 500px;
-        height: 100px;
-    }
-    .header p{
-        font-size: 18px;
-        font-weight: 200px;
-    }
-    
+  .big-text {
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .big-text p {
+    padding: 0;
+    margin: 0;
+  }
+  .list {
+    right: 0;
+    left: 30px;
+  }
+  .header {
+    width: 500px;
+    height: 100px;
+  }
+  .header p {
+    font-size: 18px;
+    font-weight: 200px;
+  }
 }
