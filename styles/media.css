@@ -13,6 +13,34 @@
         background-clip: inherit;
         background-size: 100%;
     }
+    .line-first{
+        width: 550px;
+        height: 480px;
+    }
+    .list{
+        width: 900px;
+        height: 400px;
+
+    }
+    .men{
+        width: 480px;
+        height: 100vh;
+        right: 4px;
+    }
+    .Vector{
+        position: absolute;
+        z-index: 3;
+        width: 200px;
+
+    }
+    .Name{
+        width: 276px;
+        height: 47px;
+        font-size: 5px;
+    }
+    .Name li {
+        font-size: 20px;
+      }
     .left-part {
        width: 50%;
         height: 100vh;
@@ -42,6 +70,37 @@
     .header p{
         font-size: 18px;
         font-weight: 200px;
+    }
+    .fat-text{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .three-button{
+        width: 840px;
+        height: 350px;
+    }
+    .three-button button{
+        width: 257px;
+        height: 257px;
+      
+        border-radius: 5%;
+    }
+    .window-2{
+        width: 500px;
+        height: 400px;
+    }
+    .yellow-tabl{
+        width: 130px;
+        height: 130px;
+    }
+    .text-big{
+        font-size: 15px;
+    }
+    .little-text{
+        font-size: 13px;
+        font-weight: 400;
     }
 }
 @media screen and (max-width: 780px){
