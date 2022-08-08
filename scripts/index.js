@@ -49,14 +49,15 @@ BlackButton.onclick = function () {
   content_div.innerHTML = `
 <div class="container_popup">
 <a href="" class="popup-cross">X</a>
-<div class="margin-auto text-center">
-<h1 class="color-white font-size-20 ">when you register now<br>
+<div class="popup_fat-text text-center">
+Get 10% off <br>
+your first Order
+</div>
+<div class="text-center">
+<h1 class="color-blue font-size-20 ">when you register now<br>
 you will</h1>
 </div>
-<div class="popup_fat-text">
-receive a 10%
-</div>
-<div class="popup-transparent-text">
+<div class="popup-transparent-text color-blue">
 <p>buy it for just $25</p>
 </div>
 
@@ -71,7 +72,7 @@ receive a 10%
 <a href="https://www.google.ru/webhp?hl=ru">No thanks</a>
 </div>
 <div >
-<p class="popup_basement">Have time to get a discount before it expires<p>
+<p class="popup_basement color-blue">Have time to get a discount before it expires<p>
 </div>
 
 </div>
@@ -89,8 +90,30 @@ function checkEmail(value) {
   let email = value.path[0].value;
   let input = value.path[0];
   if (!re.test(email)) {
+      let WindowAppears = document.createElement("div");
+      WindowAppears.className = "window-appears"
+      WindowAppears.innerHTML=`
+      <div class="popup-window-appears_container ">
+      <div class="green-lap"><div class="white-lap"><p class="red-lap">!</p></div>
+      </div>
+      <div class="popup__text"><p">A destructive toast.</p></div>
+      <a href="" class="WindowAppears_exit">x</a>
+      </div>
+      `
+      document.body.append( WindowAppears);
     input.className = "popup-input warning-input";
   } else {
+    let WindowAppears = document.createElement("div");
+    WindowAppears.className = "window-appears__green"
+    WindowAppears.innerHTML=`
+    <div class="popup-window-appears_container ">
+    <div class="green-lap color-greeen" ><div class="white-lap"><p class="red-lap">✔</p></div>
+    </div>
+    <div class="popup__text"><p">A successful toast.</p></div>
+    <a href="" class="WindowAppears_exit">x</a>
+    </div>
+    `
+    document.body.append( WindowAppears);
     input.className = "popup-input";
   }
 }

@@ -37,9 +37,9 @@
   text-decoration: none;
 }
 .popup_fat-text {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 900;
-  color: rgb(0, 160, 160);
+  color: rgb(0, 238, 255);
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@
 .popup-transparent-text {
   display: flex;
   justify-content: center;
-  color: rgb(0, 160, 160);
+  color: rgb(46, 116, 113);
 }
 .popup-input {
   width: 100%;
@@ -89,11 +89,62 @@
   display: flex;
   justify-content: center;
 }
+.window-appears{
+  width: 420px;
+  height: 50px;
+  background-color: #ff46468a;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+
+  position: fixed;
+z-index: 20;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.window-appears__green{
+  width: 420px;
+  height: 50px;
+  background-color: #66fd2a8a;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+
+  position: fixed;
+z-index: 20;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.popup-window-appears_container{
+  width: 400px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.popup__text{
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .text-center {
   width: 500px;
   height: 100px;
   display: flex;
   justify-content: center;
+}
+.WindowAppears_exit{
+  bottom: 15px;
+  right: 15px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
 }
 .first-slide {
   /* width: 100%;
@@ -116,7 +167,12 @@
   overflow-y: hidden;
   /* overflow-y: auto; */
 }
-
+.slide-blackman{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .header {
   width: 600px;
   height: 100px;
@@ -325,7 +381,84 @@
 .sponsors-block img:hover {
   opacity: 1;
 }
+.slide-blackman{
+  display: flex;
+  flex-direction: row;
 
+  justify-content: space-between;
+}
+.slide-blackman_big_block{
+  width: 600px;
+  height:100vh;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.slide-blackman_block{
+width: 600px;
+height: 530px;
+margin-left: 50px;
+}
+.block__big-text{
+  font-size: 20px;
+}
+.block__two-element{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.block__University{
+font-size: 15px;
+font-weight: 500;
+
+}
+
+.block__Showcase{
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.slide-blackman_black-block{
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: black;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  position: relative;
+}
+.black-block__yellow-block{
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+background-color: #ddf247;
+margin-top: 90px;
+position: absolute;
+z-index: 1;
+
+}
+.black-block__TUTORS{
+  font-size: 22px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.363);
+  margin-left: 20px;
+
+}
+.TUTORS__text-2{
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.black-block__bleck-man{
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: 2;
+}
 @keyframes Entry-block {
   0% {
     margin-left: 600px;
