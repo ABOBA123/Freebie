@@ -458,6 +458,109 @@ bottom: 0;
 right: 0;
 position: absolute;
 z-index: 2;
+} 
+.with-thee-button{
+width: 1400px;
+height: 100vh;
+}
+.with-thee-button__text-one{
+display: flex;
+justify-content: center;
+font-size: 20px;
+}
+.with-thee-button__text-two{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+.with-thee-button__three_button_row{
+  width: 100%;
+  height: 548px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+ .three_button_row__button{
+  Width:353px;
+  Height: 488px;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.three_button_row__button_white{
+  width: 380px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.three_button_row__container{
+  width: 300px;
+  height: 488px;
+  color: #f4f4f4;
+} 
+.New-png{
+  position: absolute;
+  z-index: 3;
+  margin-top: 80px;
+}
+.with-thee-button__text-one__button h1{
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.three_button_row__number{
+  margin-top: 20px;
+display: flex;
+justify-content: center;
+font-size:40px;
+}
+.three_button_row__par{
+  margin-top: 30px;
+font-size: 17px;
+font-weight: 400;
+display: flex;
+justify-content: center;
+}
+.three_button_row__yellow-button{
+  margin-top: 70px;
+width: 100%;
+height: 50px;
+background-color: #ddf247;
+border-radius: 10px;
+border: none;
+transition: 0.8s all;
+color: black;
+font-size: 20px;
+}
+.three_button_row__yellow-button:hover{
+  box-shadow: 0px 21px 127px 22px rgba(235, 238, 38, 0.765);
+}
+.container__DEVELOPMENT{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.three_button_row__button_white{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.DEVELOPMENT{
+  display: flex;
+  justify-content: center;
 }
 @keyframes Entry-block {
   0% {

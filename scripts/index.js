@@ -39,17 +39,17 @@ BlackButton.onclick = function () {
   //   let Close_div = document.createElement("block");
   //   div.appendChild(Close_div);
   //   event.stopPropagation();
-
+  
   let content_div = document.createElement("div");
   content_div.className = "popup-content";
   content_div.onclick = function (event) {
-    event.stopPropagation();
-  };
-  // event.stopPropagation("popup-content");
-  content_div.innerHTML = `
-<div class="container_popup">
-<a href="" class="popup-cross">X</a>
-<div class="popup_fat-text text-center">
+      event.stopPropagation();
+    };
+    // event.stopPropagation("popup-content");
+    content_div.innerHTML = `
+    <div class="container_popup">
+    <a href="" class="popup-cross">X</a>
+    <div class="popup_fat-text text-center">
 Get 10% off <br>
 your first Order
 </div>
@@ -78,17 +78,17 @@ you will</h1>
 </div>
 `;
 
-  div.appendChild(content_div);
+div.appendChild(content_div);
 
-  document.body.appendChild(div);
+document.body.appendChild(div);
 };
 
 function checkEmail(value) {
-  const re =
+    const re =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-
-  let email = value.path[0].value;
-  let input = value.path[0];
+    
+    let email = value.path[0].value;
+    let input = value.path[0];
   if (!re.test(email)) {
       let WindowAppears = document.createElement("div");
       WindowAppears.className = "window-appears"
@@ -97,14 +97,15 @@ function checkEmail(value) {
       <div class="green-lap"><div class="white-lap"><p class="red-lap">!</p></div>
       </div>
       <div class="popup__text"><p">A destructive toast.</p></div>
-      <a href="" class="WindowAppears_exit">x</a>
+      <a href="" class="WindowAppears_exit" onclick="ExitWindow">x</a>
       </div>
       `
       document.body.append( WindowAppears);
-    input.className = "popup-input warning-input";
-  } else {
-    let WindowAppears = document.createElement("div");
-    WindowAppears.className = "window-appears__green"
+      input.className = "popup-input warning-input";
+      
+    } else {
+        let WindowAppears = document.createElement("div");
+        WindowAppears.className = "window-appears__green"
     WindowAppears.innerHTML=`
     <div class="popup-window-appears_container ">
     <div class="green-lap color-greeen" ><div class="white-lap"><p class="red-lap">✔</p></div>

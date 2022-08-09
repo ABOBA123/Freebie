@@ -188,9 +188,12 @@ justify-content: center;
 .color-greeen{
   background-color: rgb(30, 255, 0);
 }
-.d_none{
-  display: none;
+.d_flex{
+  display: flex;
 }
 .first-line:first-line{
-
+  font-size: 30px;
+}
+.color-yellow{
+  color: #ddf247;
 }
