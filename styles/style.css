@@ -204,24 +204,23 @@ justify-content: center;
 }
 .line-first {
   width: 650px;
-  height: 500px;
-  margin-left: 123px;
-  margin-top: 30%;
-  right: 0;
+  right: -300px;
   bottom: 0;
+  right: 0;
+  position: absolute;
 }
 .list {
   position: absolute;
   z-index: 1;
   /* margin-bottom: 30px; */
   bottom: 30px;
-  right: 250px;
+left: -140px;
 }
 .men {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  right: 10px;
+  right: 0;
   opacity: 0;
 }
 .men-active {
@@ -342,6 +341,7 @@ justify-content: center;
 .window-2 {
   margin-top: 100px;
   margin-left: 20%;
+  position: relative;
 }
 .yellow-tabl {
   top: 50%;
@@ -358,9 +358,16 @@ justify-content: center;
 }
 .container {
   width: 100%;
-  height: 300px;
+  height: 100vh;
+  /* padding: auto; */
+}
+.little-container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
 
-  padding: auto;
+margin-left: 140px;
 }
 
 .sponsors-block {
@@ -390,7 +397,7 @@ justify-content: center;
 .slide-blackman_big_block{
   width: 600px;
   height:100vh;
-  margin-left: 50px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
 }
@@ -429,14 +436,14 @@ font-weight: 500;
   display: flex;
   margin-right: 20px;
   justify-content: center;
-  position: relative;
+  position: sticky;
 }
 .black-block__yellow-block{
-  width: 500px;
+  width: 480px;
   height: 600px;
   border-radius: 10px;
 background-color: #ddf247;
-margin-top: 90px;
+margin-top: 30px;
 position: absolute;
 z-index: 1;
 
@@ -561,6 +568,65 @@ font-size: 20px;
 .DEVELOPMENT{
   display: flex;
   justify-content: center;
+}
+.FAQs-slide{
+  width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+
+}
+.FAQs_container{
+width: 1500px;
+height: 100vh;
+/* background: red; */
+}
+.FAQs__text{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.FAQs_container__block{
+  width: 100%;
+  height: 150px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.FAQs_container__white-lap{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddf247;
+  right: 20px;
+  /* bottom: 200px; */
+  position: absolute;
+  z-index: 10;
+
+}
+.FAQs_container__black-line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+.block__white-lap{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddf247;
+  position: absolute;
+
+  z-index: 10;
+  display: flex;
+  
+}
+.dsakjhjk{
+  width: 100%;
+  height: 150px;
+  background-color: aqua;
 }
 @keyframes Entry-block {
   0% {
