@@ -198,3 +198,15 @@ justify-content: center;
 .color-yellow{
   color: #ddf247;
 }
+.m-0{
+  margin: 0%;
+}
+.m-20{
+  margin: 0px 20px;
+}
+.m-top-30{
+  margin-top: 30px;
+}
+.transparent{
+  background-color: rgba(0, 0, 0, 0.37);
+}

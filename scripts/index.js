@@ -149,3 +149,19 @@ YellowBattonSecond.onclick = function (e) {
     YellowBattonSecond.innerHTML = "+";
   }
 };
+
+const YellowBattonThird = document.getElementById("yellow-batton_third");
+YellowBattonThird.onclick = function (e) {
+  let div = e.path[1].querySelector("div");
+  let p = div.querySelector("p");
+  if (p.className === "active") {
+    e.path[1].className = "FAQs_container__block";
+    div.querySelector("p").className = null;
+    YellowBattonThird.innerHTML = "-";
+  } else {
+    e.path[1].className = "FAQs_container__block FAQ_S_container_active";
+
+    div.querySelector("p").className = "active";
+    YellowBattonThird.innerHTML = "+";
+  }
+};
