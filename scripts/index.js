@@ -39,14 +39,14 @@ BlackButton.onclick = function () {
   //   let Close_div = document.createElement("block");
   //   div.appendChild(Close_div);
   //   event.stopPropagation();
-  
+
   let content_div = document.createElement("div");
   content_div.className = "popup-content";
   content_div.onclick = function (event) {
-      event.stopPropagation();
-    };
-    // event.stopPropagation("popup-content");
-    content_div.innerHTML = `
+    event.stopPropagation();
+  };
+  // event.stopPropagation("popup-content");
+  content_div.innerHTML = `
     <div class="container_popup">
     <a href="" class="popup-cross">X</a>
     <div class="popup_fat-text text-center">
@@ -78,61 +78,74 @@ you will</h1>
 </div>
 `;
 
-div.appendChild(content_div);
+  div.appendChild(content_div);
 
-document.body.appendChild(div);
+  document.body.appendChild(div);
 };
 
 function checkEmail(value) {
-    const re =
+  const re =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    
-    let email = value.path[0].value;
-    let input = value.path[0];
+
+  let email = value.path[0].value;
+  let input = value.path[0];
   if (!re.test(email)) {
-      let WindowAppears = document.createElement("div");
-      WindowAppears.className = "window-appears"
-      WindowAppears.innerHTML=`
+    let WindowAppears = document.createElement("div");
+    WindowAppears.className = "window-appears";
+    WindowAppears.innerHTML = `
       <div class="popup-window-appears_container ">
       <div class="green-lap"><div class="white-lap"><p class="red-lap">!</p></div>
       </div>
       <div class="popup__text"><p">A destructive toast.</p></div>
       <a href="" class="WindowAppears_exit" onclick="ExitWindow">x</a>
       </div>
-      `
-      document.body.append( WindowAppears);
-      input.className = "popup-input warning-input";
-      
-    } else {
-        let WindowAppears = document.createElement("div");
-        WindowAppears.className = "window-appears__green"
-    WindowAppears.innerHTML=`
+      `;
+    document.body.append(WindowAppears);
+    input.className = "popup-input warning-input";
+  } else {
+    let WindowAppears = document.createElement("div");
+    WindowAppears.className = "window-appears__green";
+    WindowAppears.innerHTML = `
     <div class="popup-window-appears_container ">
     <div class="green-lap color-greeen" ><div class="white-lap"><p class="red-lap">✔</p></div>
     </div>
     <div class="popup__text"><p">A successful toast.</p></div>
     <a href="" class="WindowAppears_exit">x</a>
     </div>
-    `
-    document.body.append( WindowAppears);
+    `;
+    document.body.append(WindowAppears);
     input.className = "popup-input";
   }
 }
-const YellowBatton = document.getElementById('yellow-batton')
-YellowBatton.onclick = function (e){
- let div = e.path[1].querySelector('div')
- if (!div.querySelector('p')){
-  YellowBatton.innerHTML="-"
-  let p = document.createElement('p')
-  p.innerHTML=`Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare odio justo, ac<br>
-  efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.`
-  div.appendChild(p)
- }
- else {
-  YellowBatton.innerHTML="+"
-  div.querySelector('p').remove()
- }
-//  console.log(div.querySelector('p'))
 
-  // console.log(e.path[1].querySelector('div'))
-}
+const YellowBatton = document.getElementById("yellow-batton_first");
+YellowBatton.onclick = function (e) {
+  let div = e.path[1].querySelector("div");
+  let p = div.querySelector("p");
+  if (p.className === "active") {
+    e.path[1].className = "FAQs_container__block";
+    div.querySelector("p").className = null;
+    YellowBatton.innerHTML = "-";
+  } else {
+    e.path[1].className = "FAQs_container__block FAQ_S_container_active";
+
+    div.querySelector("p").className = "active";
+    YellowBatton.innerHTML = "+";
+  }
+};
+
+const YellowBattonSecond = document.getElementById("yellow-batton_second");
+YellowBattonSecond.onclick = function (e) {
+  let div = e.path[1].querySelector("div");
+  let p = div.querySelector("p");
+  if (p.className === "active") {
+    e.path[1].className = "FAQs_container__block";
+    div.querySelector("p").className = null;
+    YellowBattonSecond.innerHTML = "-";
+  } else {
+    e.path[1].className = "FAQs_container__block FAQ_S_container_active";
+
+    div.querySelector("p").className = "active";
+    YellowBattonSecond.innerHTML = "+";
+  }
+};

@@ -595,6 +595,7 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
+  transition: 0.3s all;
 }
 .FAQs_container__white-lap {
   width: 50px;
@@ -629,7 +630,33 @@
 }
 .FAQs__content{
   width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
+
+.FAQs__content p{
+  /* padding: 0;
+  top: 80px; */
+  /* position: absolute; */
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.FAQs__content .active{
+
+  /* padding: 10px;  */
+  opacity: 1;
+  display: flex;
+}
+
+.FAQ_S_container_active{
+  margin-bottom: 40px;
+}
+
 @keyframes Entry-block {
   0% {
     margin-left: 600px;
