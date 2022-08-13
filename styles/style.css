@@ -616,6 +616,10 @@
   height: 40px;
   border-radius: 50%;
   background-color: #ddf247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
   /* position: absolute;
   right: 0;
   bottom: 0; */
@@ -623,10 +627,8 @@
   z-index: 10;
   display: flex;
 }
-.dsakjhjk {
-  width: 100%;
-  height: 150px;
-  background-color: aqua;
+.FAQs__content{
+  width: 80%;
 }
 @keyframes Entry-block {
   0% {

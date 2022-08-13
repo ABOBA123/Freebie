@@ -118,3 +118,21 @@ function checkEmail(value) {
     input.className = "popup-input";
   }
 }
+const YellowBatton = document.getElementById('yellow-batton')
+YellowBatton.onclick = function (e){
+ let div = e.path[1].querySelector('div')
+ if (!div.querySelector('p')){
+  YellowBatton.innerHTML="-"
+  let p = document.createElement('p')
+  p.innerHTML=`Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare odio justo, ac<br>
+  efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.`
+  div.appendChild(p)
+ }
+ else {
+  YellowBatton.innerHTML="+"
+  div.querySelector('p').remove()
+ }
+//  console.log(div.querySelector('p'))
+
+  // console.log(e.path[1].querySelector('div'))
+}
