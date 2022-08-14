@@ -676,6 +676,10 @@ position: absolute;
 z-index: 1;
 display: flex;
 justify-content: center;
+transition: 0.3s all;
+}
+.slide__yellow_block:hover{
+  box-shadow: 0px 0px 50px rgba(235, 238, 38, 0.765);
 }
 .yellow_block__container {
   width: 800px;
@@ -774,7 +778,11 @@ link{
   /* font-size: 2px; */
 }
 .Copyright{
-  
+  display: flex;
+  flex-direction: row;
+}
+.asd{
+  background-color: rgba(0, 0, 0, 0.507);
 }
 @keyframes Entry-block {
   0% {
