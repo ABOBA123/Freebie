@@ -1,4 +1,5 @@
 const thirdSlide = document.getElementById("third-slide");
+const fourSlide = document.getElementById("four_slide");
 const threeButton = document.getElementById("three");
 
 window.addEventListener("scroll", function () {
@@ -154,6 +155,8 @@ const YellowBattonThird = document.getElementById("yellow-batton_third");
 YellowBattonThird.onclick = function (e) {
   let div = e.path[1].querySelector("div");
   let p = div.querySelector("p");
+
+  console.log(e.path[1].classNamem, p.className);
   if (p.className === "active") {
     e.path[1].className = "FAQs_container__block";
     div.querySelector("p").className = null;
@@ -165,7 +168,6 @@ YellowBattonThird.onclick = function (e) {
     YellowBattonThird.innerHTML = "+";
   }
 };
-
 
 const YellowBattonFour = document.getElementById("yellow-batton_four");
 YellowBattonFour.onclick = function (e) {
