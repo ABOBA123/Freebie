@@ -134,6 +134,28 @@ YellowBatton.onclick = function (e) {
     YellowBatton.innerHTML = "+";
   }
 };
+const FourSlide= document.getElementById('four_slide')
+const YellowBlackBlock = document.getElementById('yellow_black_block')
+
+window.addEventListener("scroll",function(){
+  console.log(this.window.pageYOffset, FourSlide.scrollHeight)
+  if (window.pageYOffset >=1891){
+    YellowBlackBlock.className ="slide-blackman_black-block";
+  }
+  else{
+    YellowBlackBlock.className="slide-blackman_black-block off_block";
+  }
+    if (this.window.pageYOffset>=2215){
+      YellowBlackBlock.className="slide-blackman_black-block opacity_1"
+    }
+    // if (this.window.pageYOffset>2874){
+    //     YellowBlackBlock.className="slide-blackman_black-block off_block";
+
+    // }
+ }
+);
+
+
 
 const YellowBattonSecond = document.getElementById("yellow-batton_second");
 YellowBattonSecond.onclick = function (e) {

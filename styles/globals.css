@@ -211,3 +211,20 @@ body {
   border: none;
   background-color: rgba(0, 0, 0, 0.37);
 }
+.white-line{
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  margin-bottom: 110px;
+  background-color: #ffffff;
+}
+.color-yellow{
+  color: #ddf247;
+}
+.color-grey{
+  color: rgb(121, 121, 121);
+}
+.opacity_1{
+  opacity: 1;
+  animation:AnimationBlock 0.3s ease-out 1 alternate 0s forwards;
+}
