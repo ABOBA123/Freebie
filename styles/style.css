@@ -21,6 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s all;
+  opacity: 0;
+  animation:  popup-content 0.3s ease 1 alternate 0s forwards;
+}
+.opacity__1{
+opacity: 1;
 }
 .container_popup {
   /* width: 600px;
@@ -864,5 +870,13 @@ color: rgb(230, 149, 0);
   }
   100% {
     margin-left: 1200px;
+  }
+}
+@keyframes popup-content{
+  0% {
+    margin-bottom: 1000px;
+  }
+  100% {
+    margin-bottom: 0px;
   }
 }

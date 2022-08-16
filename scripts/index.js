@@ -56,7 +56,7 @@ BlackButton.onclick = function () {
   //   event.stopPropagation();
 
   let content_div = document.createElement("div");
-  content_div.className = "popup-content";
+  content_div.className = "popup-content opacity__1";
   content_div.onclick = function (event) {
     event.stopPropagation();
   };
