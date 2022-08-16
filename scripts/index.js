@@ -31,6 +31,7 @@ window.addEventListener("scroll", function () {
 const BlackButton = document.getElementById("black-button");
 
 BlackButton.onclick = function () {
+  // document.body.classList.toggle('scroll-lock');
   let div = document.createElement("div");
   div.id = "popup_block";
   div.className = "popup_block";
@@ -138,7 +139,7 @@ const FourSlide= document.getElementById('four_slide')
 const YellowBlackBlock = document.getElementById('yellow_black_block')
 
 window.addEventListener("scroll",function(){
-  console.log(this.window.pageYOffset, FourSlide.scrollHeight)
+  // console.log(this.window.pageYOffset, FourSlide.scrollHeight)
   if (window.pageYOffset >=1891){
     YellowBlackBlock.className ="slide-blackman_black-block";
   }
@@ -155,6 +156,27 @@ window.addEventListener("scroll",function(){
  }
 );
 
+const Tutorials = document.getElementById('tutorials')
+Tutorials.onclick = function setScrollIntoVieOptions(top){
+  const ThirdSlide = document.querySelector('.third-slide')
+  ThirdSlide.scrollIntoView({
+    block:"nearest",
+    inline:"nearest",
+    behavior:"smooth"
+  })
+}
+const CaseStudies = document.getElementById('Case_studies')
+CaseStudies.onclick = function(){
+  window.scrollTo(0,3200)
+  const windowScrollTop = window.pageYOffset;
+
+}
+const Resourses = document.getElementById('Resourses')
+Resourses.onclick = function(){
+  window.scrollTo(0,3900)
+  const windowScrollTop = window.pageYOffset;
+
+}
 
 
 const YellowBattonSecond = document.getElementById("yellow-batton_second");

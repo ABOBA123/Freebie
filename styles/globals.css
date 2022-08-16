@@ -228,3 +228,9 @@ body {
   opacity: 1;
   animation:AnimationBlock 0.3s ease-out 1 alternate 0s forwards;
 }
+.scrolling{
+  transition: 3s all;
+}
+body.scroll-lock{
+  overflow: hidden;
+}
