@@ -10,6 +10,12 @@ window.addEventListener("scroll", function () {
     threeButton.className = "three-button off";
   }
 });
+
+// const ButtonOne = document.getElementById('button_one')
+// ButtonOne.onclick = function (e){
+//   let div = e.pat
+  // ButtonOne.innerHTML= `Bring your design vision to life in clean, semantic HTML5`
+
 // const ThreeButtonBlack = document.getElementById('Three-button-black')
 
 // window.addEventListener("scroll",function(){
