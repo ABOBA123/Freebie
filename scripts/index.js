@@ -10,6 +10,19 @@ window.addEventListener("scroll", function () {
     threeButton.className = "three-button off";
   }
 });
+// const ThreeButtonBlack = document.getElementById('Three-button-black')
+
+// window.addEventListener("scroll",function(){
+
+//   if (this.window.pageXOffset >=2841){
+//     ThreeButtonBlack.className = "with-thee-button__three_button_row"
+//   }
+//   else{
+//     ThreeButtonBlack.className="with-thee-button__three_button_row off_black_block"
+//   }
+
+// });
+
 
 const men = document.getElementById("men");
 function menactive() {
@@ -17,16 +30,16 @@ function menactive() {
 }
 setTimeout(menactive, 1500);
 
-const slide = document.getElementById("third-slide");
-const FetText = document.getElementById("fet");
-window.addEventListener("scroll", function () {
-  // console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
-  if (window.pageYOffset >= 608) {
-    FetText.className = "fat-text";
-  } else {
-    FetText.className = "fat-text off_fat-text";
-  }
-});
+// const slide = document.getElementById("third-slide");
+// const FetText = document.getElementById("fet");
+// window.addEventListener("scroll", function () {
+//    console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
+//   if (window.pageYOffset >= 608) {
+//     FetText.className = "fat-text";
+//   } else {
+//     FetText.className = "fat-text off_fat-text";
+//   }
+// });
 
 const BlackButton = document.getElementById("black-button");
 
