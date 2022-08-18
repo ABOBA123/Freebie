@@ -283,6 +283,15 @@
 .left-slide {
   width: 600px;
 }
+.text-box{
+  opacity: 1;
+  transition: 0.5s all;
+  animation: BoxText 0.5s ease 1 alternate 0s forwards;
+}
+.out{
+  opacity: 0;
+  animation: Box-text-back 0.5s ease-out 1 alternate 0s forwards;
+}
 .grey-block {
   width: 100%;
 }
@@ -885,5 +894,21 @@ color: rgb(230, 149, 0);
   }
   100% {
     margin-bottom: 0px;
+  }
+}
+@keyframes BoxText{
+  0%{
+    margin-left: -500px;
+  }
+  100%{
+    margin-right: 0px;
+  }
+}
+@keyframes Box-text-back{
+ 0%{
+    margin-left: 0px;
+  }
+  100%{
+    margin-right: -500px;
   }
 }

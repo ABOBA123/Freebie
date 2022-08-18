@@ -11,23 +11,23 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// const ButtonOne = document.getElementById('button_one')
-// ButtonOne.onclick = function (e){
-//   let div = e.pat
-  // ButtonOne.innerHTML= `Bring your design vision to life in clean, semantic HTML5`
+const TextBoxt = document.getElementById('text-box')
+// console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
+window.addEventListener("scroll",function (){
+  // function sayHi() {
+    //   alert('Привет');
+    // }
+    
+    // setTimeout(sayHi, 1000);
+    if (window.pageYOffset >=631){
+      TextBoxt.className= "text-box ";
+    }
+    else {
+      TextBoxt.className ="text-box out";
+    }
 
-// const ThreeButtonBlack = document.getElementById('Three-button-black')
+  });
 
-// window.addEventListener("scroll",function(){
-
-//   if (this.window.pageXOffset >=2841){
-//     ThreeButtonBlack.className = "with-thee-button__three_button_row"
-//   }
-//   else{
-//     ThreeButtonBlack.className="with-thee-button__three_button_row off_black_block"
-//   }
-
-// });
 
 
 const men = document.getElementById("men");
@@ -36,16 +36,6 @@ function menactive() {
 }
 setTimeout(menactive, 1500);
 
-// const slide = document.getElementById("third-slide");
-// const FetText = document.getElementById("fet");
-// window.addEventListener("scroll", function () {
-//    console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
-//   if (window.pageYOffset >= 608) {
-//     FetText.className = "fat-text";
-//   } else {
-//     FetText.className = "fat-text off_fat-text";
-//   }
-// });
 
 const BlackButton = document.getElementById("black-button");
 
