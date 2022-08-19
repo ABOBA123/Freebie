@@ -1,3 +1,12 @@
+const BlackLap = document.getElementById('black-lap')
+
+BlackLap.onclick = function (e){
+  let div = e.path[1].querySelector("div");
+  let p = div.querySelector("p");
+  
+}
+
+
 const thirdSlide = document.getElementById("third-slide");
 const fourSlide = document.getElementById("four_slide");
 const threeButton = document.getElementById("three");
@@ -128,6 +137,17 @@ function checkEmail(value) {
     input.className = "popup-input";
   }
 }
+const SaleButton = document.getElementById("sale-button")
+
+SaleButton.onclick = function () {
+  // alert("Yello world")
+  let div = document.createElement("div");
+  div.id = "popup-block";
+  div.className = "popup-block";
+  div.onclick = function () {
+    div.remove();
+  };
+}
 
 const YellowBatton = document.getElementById("yellow-batton_first");
 YellowBatton.onclick = function (e) {
@@ -149,7 +169,7 @@ const YellowBlackBlock = document.getElementById('yellow_black_block')
 
 window.addEventListener("scroll",function(){
   // console.log(this.window.pageYOffset, FourSlide.scrollHeight)
-  if (window.pageYOffset >=1891){
+  if (window.pageYOffset >=2091){
     YellowBlackBlock.className ="slide-blackman_black-block";
   }
   else{
@@ -237,3 +257,27 @@ YellowBattonFour.onclick = function (e) {
     YellowBattonFour.innerHTML = "+";
   }
 };
+
+const ThreeBlackButton = document.getElementById('threeblackbutton')
+
+window.addEventListener("scroll",function buttonactive (){
+  // console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
+  if (this.window.pageYOffset >=2890){
+    ThreeBlackButton.className = "with-thee-button__three_button_row with-thee-button__three_button_row-active"
+  }
+  else {
+    ThreeBlackButton.className = "with-thee-button__three_button_row back"
+  }
+
+})
+const FourText = document.getElementById ('Four-text')
+
+window.addEventListener("scroll",function(){
+  // console.log(this.window.pageYOffset, FourSlide.scrollHeight)
+  if (window.pageYOffset >=2091){
+    FourText.className ="slide-blackman_big_block slide-blackman_big_block-active";
+  }
+  else{
+    FourText.className="slide-blackman_big_block back";
+  }
+  });

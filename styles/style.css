@@ -189,6 +189,7 @@
 .header p {
   font-size: 22px;
   font-weight: 250px;
+  cursor: pointer;
 }
 
 .line-3 {
@@ -308,6 +309,7 @@
   
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 .right-slide {
   width: 1200px;
@@ -327,6 +329,7 @@
 }
 .white-button{
   transition: 0.3s all;
+  cursor: pointer;
 }
 .white-button:hover{
   width: 350px;
@@ -421,6 +424,17 @@
   margin-left: 10px;
   display: flex;
   align-items: center;
+  opacity: 0;
+}
+.slide-blackman_big_block-active{
+  transition: 0.3s all;
+  opacity: 1;
+  animation: BoxText 0.3s ease-out 1 alternate 0s forwards;
+}
+.slide-blackman_big_block-back{
+  transition: 0.3s all;
+  opacity: 1;
+  animation: Box-text-back 0.3s ease-out 1 alternate 0s forwards;
 }
 .slide-blackman_block {
   width: 600px;
@@ -494,7 +508,6 @@
 .with-thee-button {
   width: 1400px;
   height: 100vh;
-
 }
 .with-thee-button__text-one {
   display: flex;
@@ -514,7 +527,17 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  animation: ThreeButtonBlack 0.5s ease-out 1 alternate 0s forwards;
+
+    opacity: 0;
+  /* animation: ThreeButtonBlack 0.5s ease-out 1 alternate 0s forwards; */
+}
+.with-thee-button__three_button_row-active{
+  transition: 1s all;
+  opacity: 1;
+}
+.back{
+  transition: 1s all;
+  opacity: 0;
 }
 .three_button_row__button {
   width: 353px;
@@ -594,6 +617,7 @@
   transition: 0.3s all;
   color: black;
   font-size: 20px;
+  cursor: pointer;
 }
 .off_black_block {
   opacity: 1;
@@ -680,7 +704,7 @@
   /* position: absolute;
   right: 0;
   bottom: 0; */
-
+cursor: pointer;
   z-index: 10;
   display: flex;
 }
