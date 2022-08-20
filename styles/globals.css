@@ -40,7 +40,7 @@ body {
   line-height: 25px;
 }
 
-.foryou{
+.foryou {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -219,26 +219,30 @@ body {
   border: none;
   background-color: rgba(0, 0, 0, 0.37);
 }
-.white-line{
+.white-line {
   width: 100%;
   height: 2px;
   position: absolute;
   margin-bottom: 110px;
   background-color: #ffffff;
 }
-.color-yellow{
+.color-yellow {
   color: #ddf247;
 }
-.color-grey{
+.color-grey {
   color: rgb(121, 121, 121);
 }
-.opacity_1{
+.opacity_1 {
   opacity: 1;
-  animation:AnimationBlock 0.3s ease-out 1 alternate 0s forwards;
+  animation: AnimationBlock 0.3s ease-out 1 alternate 0s forwards;
 }
-.scrolling{
+.scrolling {
   transition: 3s all;
 }
-body.scroll-lock{
+body.scroll-lock {
   overflow: hidden;
+}
+
+.hidden {
+  overflow-x: hidden;
 }
