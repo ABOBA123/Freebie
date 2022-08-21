@@ -1,4 +1,3 @@
-const { response } = require("express");
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -9,95 +8,66 @@ app.use(express.json());
 app.use(express.static(__dirname));
 app.set("view engine", "pug");
 
+let arr = [
+  {
+    id: 1,
+    title: "DEVELOPMENT",
+    price: "$10",
+    list: ["1 Module Javascript", "1 Module Human Resources"],
+    isNew: false,
+  },
+  {
+    id: 2,
+    title: "IT & SOFTWARE",
+    price: "$30",
+    list: [
+      "1 Module Javascript",
+      "1 Module Human Resources",
+      "2 Module Sales Teams",
+      "Pack Marketing Skills",
+      "5 Module Study Case",
+    ],
+    isNew: true,
+  },
+  {
+    id: 3,
+    title: "BUSINESS",
+    price: "$30",
+    list: [
+      "1 Module Javascript",
+      "1 Module Human Resources",
+      "2 Module Sales Teams",
+    ],
+    isNew: false,
+  },
+];
+
+app.get("/:id", (req, res) => {
+  const { id } = req.params;
+
+  let result;
+
+  for (let obj of arr) {
+    if (obj.id === Number(id)) {
+      result = obj;
+    }
+  }
+
+  if (!result) {
+    // --- Ошибка 404 страница
+
+    return res.json("Неверный ID");
+  }
+
+  res.render("price", {
+    obj: result,
+  });
+});
+
 app.use("/", (req, res) => {
-  const arr = [
-    {
-      id: 1,
-      title: "DEVELOPMENT",
-      price: "$10",
-      list: ["1 Module Javascript", "1 Module Human Resources"],
-      isNew: false,
-    },
-    {
-      id: 2,
-      title: "IT & SOFTWARE",
-      price: "$30",
-      list: [
-        "1 Module Javascript",
-        "1 Module Human Resources",
-        "2 Module Sales Teams",
-        "Pack Marketing Skills",
-        "5 Module Study Case",
-      ],
-      isNew: true,
-    },
-    {
-      id: 1,
-      title: "BUSINESS",
-      price: "$30",
-      list: [
-        "1 Module Javascript",
-        "1 Module Human Resources",
-        "2 Module Sales Teams",
-      ],
-      isNew: false,
-    },
-  ];
-
   res.render("main", {
-    title: "Мои контакты",
-    emailsVisible: true,
     prices: arr,
-    phone: "+1234567890",
   });
-  //   res.sendFile(path.join(__dirname, "index.html"));
-});
-
-app.use("/contact", function (request, response) {
-  response.render("contact", {
-    title: "Мои контакты",
-    emailsVisible: true,
-    emails: ["gavgav@mycorp.com", "mioaw@mycorp.com"],
-    phone: "+1234567890",
-  });
-});
-
-app.get("/price", (req, res) => {
-  const arr = [
-    {
-      id: 1,
-      title: "DEVELOPMENT",
-      price: "$10",
-      list: ["1 Module Javascript", "1 Module Human Resources"],
-      isNew: false,
-    },
-    {
-      id: 2,
-      title: "IT & SOFTWARE",
-      price: "$30",
-      list: [
-        "1 Module Javascript",
-        "1 Module Human Resources",
-        "2 Module Sales Teams",
-        "Pack Marketing Skills",
-        "5 Module Study Case",
-      ],
-      isNew: true,
-    },
-    {
-      id: 1,
-      title: "BUSINESS",
-      price: "$30",
-      list: [
-        "1 Module Javascript",
-        "1 Module Human Resources",
-        "2 Module Sales Teams",
-      ],
-      isNew: false,
-    },
-  ];
-
-  return res.json(arr);
 });
 
 app.listen(PORT, () => {
