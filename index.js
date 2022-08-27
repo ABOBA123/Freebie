@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const { Script } = require("vm");
 
 const PORT = 8000;
 
@@ -48,27 +47,15 @@ app.get("/:id", (req, res) => {
 
   let result;
 
-
   for (let obj of arr) {
     if (obj.id === Number(id)) {
       result = obj;
     }
   }
   if (!result) {
-    
-    // --- Ошибка 404 страница
-//     let div = document.createElement("div");
-//     div.innerHTML=`
-//     <div class="header">
-//     <div class="black-lap mrgin-left-50"><img id="black-lap" class="png" src="/assets/arrow"
-//             alt="/assets/_.png"></div>
-//     <p id="tutorials" class="tutorials scrolling">tutorials</p>
-//     <p id="Case_studies">Case studies</p>
-//     <p id="Resourses">Resourses</p>
-// </div>`
-
-    return res.json("Eror 404");
-    
+    res.render("Error", {
+      title: "Page Not Found - 404",
+    });
   }
   res.render("price", {
     obj: result,
