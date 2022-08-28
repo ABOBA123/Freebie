@@ -1,11 +1,19 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const axios = require("axios");
+const expressip = require("express-ip");
+app.use(expressip().getIpInfoMiddleware);
 
 const PORT = 8000;
 
 app.use(express.json());
 app.use(express.static(__dirname));
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 app.set("view engine", "pug");
 
 let arr = [
@@ -61,10 +69,62 @@ app.get("/:id", (req, res) => {
     obj: result,
   });
 });
-app.use("/", (req, res) => {
-  res.render("main", {
-    prices: arr,
-  });
+
+app.post("/:id", (req, res) => {
+  const { id } = req.params;
+  const { title } = req.query;
+
+  let result;
+
+  for (let obj of arr) {
+    if (obj.id === Number(id)) {
+      obj.title = title;
+      result = obj;
+    }
+  }
+  if (!result) {
+    res.render("Error", {
+      title: "Page Not Found - 404",
+    });
+  }
+
+  return res.json({ id, title, result });
+});
+
+app.get("/", (req, res) => {
+  // console.log(req.ipInfo);
+
+  let { lang } = req.query;
+
+  if (lang === "ru") {
+    res.render("main", {
+      prices: arr,
+      title: "Халява",
+      lang: "en",
+      params: {
+        tutorials: "Обучение",
+        cases: "Примеры работ",
+        resourses: "Источники",
+      },
+      firstSlide: {
+        improve: "Проверьте свои навыки в практики с кодом",
+      },
+    });
+  } else {
+    res.render("main", {
+      prices: arr,
+      title: "Freebie",
+      lang: "ru",
+      params: {
+        tutorials: "Tutorials",
+        cases: "Case studies",
+        resourses: "Resourses",
+      },
+      firstSlide: {
+        improve: "Improve your skills by study width coding",
+      },
+    });
+  }
 });
 
 app.listen(PORT, () => {

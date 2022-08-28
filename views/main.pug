@@ -17,14 +17,13 @@
             <div class="left-part ">
                 <div id="head" class="header">
                     <div class="black-lap mrgin-left-50"><img id="black-lap" class="png" src="../assets/arrow" alt="test"></div>
-                    <p id="tutorials" class="tutorials scrolling">tutorials</p>
-                    <p id="Case_studies">Case studies</p>
-                    <p id="Resourses">Resourses</p>
+                    <p id="tutorials" class="tutorials scrolling">#{params.tutorials}</p>
+                    <p id="Case_studies">#{params.cases}</p>
+                    <p id="Resourses">#{params.resourses}</p>
+                    <a href="?lang=ru">Russian version #{lang}</a>
                 </div>
                 <div class="big-text mrgin-left-50">
-                    <p>Improve your <br>
-                        skills by study<br>
-                        width coding</p>
+                    <p>#{firstSlide.improve}</p>
                 </div>
                 <div class="litle-text mrgin-left-50"><img src="./assets/hotdog.png" alt="./assets/hotdog.png">
                     <p> Create, launch, and iterate on new<br>

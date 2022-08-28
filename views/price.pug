@@ -8,11 +8,10 @@ html(lang="en")
     body 
         <div>
             <h1>#{obj.title} (#{obj.id})</h1>
-            <div>
+            form(method="POST" action='/' + obj.id + '?' + "title=" + obj.title )
                 <input value=#{obj.title} /> <br />
                 <input value=#{obj.price} /> <br />
                 <input type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
-
                 <button>Изменить</button>
-            </div>
+            
         </div>
