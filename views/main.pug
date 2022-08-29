@@ -20,18 +20,17 @@
                     <p id="tutorials" class="tutorials scrolling">#{params.tutorials}</p>
                     <p id="Case_studies">#{params.cases}</p>
                     <p id="Resourses">#{params.resourses}</p>
-                    <a href="?lang=ru">Russian version #{lang}</a>
                 </div>
+                    <a class="lang" href="?lang=ru"> <img class="russian" src="https://kupit-flag.ru/upload/iblock/64c/64ccddf8ea581072cd4a901d84eeca7c.png" alt="./assets/Line 1.png"></a>
+                      <a class="lang_usa" href="?"> <img class="Usa" src="https://www.rabstol.net/uploads/gallery/main/229/rabstol_net_flags_57.jpg" alt="./assets/Line 1.png"></a>
                 <div class="big-text mrgin-left-50">
                     <p>#{firstSlide.improve}</p>
                 </div>
                 <div class="litle-text mrgin-left-50"><img src="./assets/hotdog.png" alt="./assets/hotdog.png">
-                    <p> Create, launch, and iterate on new<br>
-                        marketing campaigns without distracting<br>
-                        your product team.</p>
+                    <p class="create"> #{firstSlide.create}</p>
                 </div>
                 <div class="black-button mrgin-left-50">
-                    <button id="black-button">Get started <img class="line-3" src="../assets/arrow_2" alt="../assets/arrow_2"></button>
+                    <button id="black-button">#{firstSlide.blackButton}<img class="line-3" src="../assets/arrow_2" alt="../assets/arrow_2"></button>
                 </div>
             </div>
             <div class="right-part backgraund-black">
@@ -58,12 +57,10 @@
 
             <div id="text-box" class="text-box">
                 <div id="fet" class="fat-text top-90 left-50">
-                    <p class="foryou">Our Features<br>
-                        Special For You</p>
+                    <p class="foryou">#{secondslide.Features}</p>
                 </div>
                 <div class="top-90 left-50 ">
-                    <p>We provide various special <br>
-                        features for all of you</p>
+                    <p>#{secondslide.Provide}</p>
                 </div>
                 <div class="slider left-50">
                     <button class="backgraund-yellow border-none"></button>
@@ -77,16 +74,16 @@
             <div id="three" class="three-button off">
                 <button id="button_one" class="white-button border-none color-FFF">
                     <div class="vector"> <img src="./assets/yellow-line.png" alt="">
-                        <p class="top-90 litle-fat-text position "> Best Tutors </p>
+                        <p class="top-90 litle-fat-text position "> #{secondslide.Best} </p>
                 </button>
-                <!-- <button class="backgraund-yellow border-none"> -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                //- <!-- <button class="backgraund-yellow border-none"> -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
                 <button class="white-button border-none color-FFF">
                     <div class="vector"> <img src="../assets/blackline.png" alt="">
-                        <p class="top-90 litle-fat-text position">Flexible </p>
+                        <p class="top-90 litle-fat-text position">#{secondslide.Flexible} </p>
                 </button>
                 <button class="white-button border-none color-FFF">
                     <div class="vector"> <img src="../assets/orange-line.png" alt="">
-                        <p class="top-90 litle-fat-text position"> Easy Access </p>
+                        <p class="top-90 litle-fat-text position"> #{secondslide.ease} </p>
                 </button>
             </div>
         </div>
@@ -101,15 +98,13 @@
                 <div class="container">
                     <div class="little-container">
                         <div class="text-big font-size-20 margin-top">
-                            <h1> The language for<br> building web pages</h1>
+                            <h1>#{thirdslide.language}</h1>
                         </div>
                         <div class="little-text  ">
-                            <p>Go live on a fast, reliable,
-                                and hassle-free<br> hosting network that scales with your business<br> with one click
-                                and go code!</p>
+                            <p>#{thirdslide.live}</p>
                         </div>
                         <div class="black-button  font-size-5">
-                            <button id="black-button" class="font-size-5">Tru it your self<img class="line-3" src="./assets/arrow_2" alt="./assets/arrow_2"></button>
+                            <button id="black-button" class="font-size-5">#{thirdslide.seld}<img class="line-3" src="./assets/arrow_2" alt="./assets/arrow_2"></button>
                         </div>
                     </div>
                 </div>
@@ -120,16 +115,16 @@
             <div id="Four-text" class="slide-blackman_big_block">
                 <div class="slide-blackman_block">
                     <div class="block__big-text">
-                        <h1>Get up and running<br>fast together</h1>
+                        <h1>#{fourthslide.Get}</h1>
                     </div>
                     <div class="block__two-element">
                         <div class="block__University "><img src="../assets/yellow waves.png" alt="./assets/yellow waves.png">
                             <p>
-                            <h1>University</h1> Browse hundreds of in-depth<br> videos, courses, and guides<br> to get up and running fast</p>
+                            <h1>#{fourthslide.University}</h1>#{fourthslide.Browse}</p>
                         </div>
                         <div class="block__Showcase"><img src="../assets/React_yellow.png" alt="./assets/React_yellow.png">
                             <p>
-                            <h1>Showcase</h1> Get inspired by the<br> incredible websites built by<br> members of the community</p>
+                            <h1>#{fourthslide.Showcase}</h1>#{fourthslide.inspired}</p>
                         </div>
                     </div>
 
@@ -138,7 +133,7 @@
             <div id="yellow_black_block" class="slide-blackman_black-block">
                 <div class="black-block__yellow-block">
                     <div class="black-block__TUTORS">
-                        <h1>TUTORS <div class="TUTORS__text-2">Anthoney <br>Mills</div>
+                        <h1>#{fourthslide.TUTORS} <div class="TUTORS__text-2">#{fourthslide.Anthoney}</div>
                         </h1>
                     </div>
                     <img class="black-block__bleck-man" src="../assets/blackman.png" alt="./assets/blackman.png">
@@ -150,10 +145,10 @@
         <div class="slide-blackman j-center">
             <div id="Three-button-black" class="with-thee-button">
                 <div class="with-thee-button__text-one">
-                    <h1> Choose your package</h1>
+                    <h1> #{fifthslide.Choose}</h1>
                 </div>
                 <div class="with-thee-button__text-two">
-                    <p>We provide various types of packages just for you</p>
+                    <p>#{fifthslide.provide}</p>
                 </div>
                 <div id="threeblackbutton" class="with-thee-button__three_button_row">
                     each block in prices
@@ -191,14 +186,12 @@
         <div class="FAQs-slide">
             <div class="FAQs_container">
                 <div class="FAQs__text">
-                    <h1>FAQs</h1>
+                    <h1>#{sixthslide.FAQs}</h1>
                 </div>
                 <div class="FAQs_container__block">
                     <div class="FAQs__content">
-                        <h1>01. Can I Find the right information faster?</h1>
-                        <p>Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare
-                            odio justo, ac<br>
-                            efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.</p>
+                        <h1>#{sixthslide.I}</h1>
+                        <p>#{sixthslide.Nulla}</p>
                     </div>
                     <button id="yellow-batton_first" class="block__white-lap">+</button>
                 </div>
@@ -207,10 +200,8 @@
                 <div class="FAQs_container__black-line"></div>
                 <div class="FAQs_container__block">
                     <div class="FAQs__content">
-                        <h1>02. Can I Find the right information faster?</h1>
-                        <p>Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare
-                            odio justo, ac<br>
-                            efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.</p>
+                        <h1>#{sixthslide.Find}</h1>
+                        <p>#{sixthslide.Nulla}</p>
                     </div>
                     <button id="yellow-batton_second" class="block__white-lap">+</button>
 
@@ -219,10 +210,8 @@
                 <div class="FAQs_container__black-line"></div>
                 <div class="FAQs_container__block">
                     <div class="FAQs__content">
-                        <h1>03. How to get insights from users?</h1>
-                        <p>Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare
-                            odio justo, ac<br>
-                            efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.</p>
+                        <h1>#{sixthslide.How}</h1>
+                        <p>#{sixthslide.Nulla}</p>
                     </div>
                     <button id="yellow-batton_third" class="block__white-lap">+</button>
                 </div>
@@ -231,10 +220,8 @@
                 <div class="FAQs_container__black-line"></div>
                 <div class="FAQs_container__block">
                     <div class="FAQs__content">
-                        <h1>04. Can I develop my website without code?</h1>
-                        <p>Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare
-                            odio justo, ac<br>
-                            efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.</p>
+                        <h1>#{sixthslide.develop}</h1>
+                        <p>#{sixthslide.Nulla}</p>
                     </div>
                     <button id="yellow-batton_four" class="block__white-lap">+</button>
                 </div>
@@ -245,10 +232,10 @@
                 <div class="yellow_block__container">
                     <div class="m-0">
                         <div class="container__Start">
-                            <h1> Start upgrading your<br> skills free for this month</h1>
+                            <h1>#{besementslide.upgrading}</h1>
                         </div>
                         <div class="Star__p">
-                            <p>Build your site for free and take as long as you need</p>
+                            <p>#{besementslide.Build}</p>
                         </div>
                     </div>
                     <div class="black-button d_flex flex-row m-top-30 ">
@@ -264,13 +251,13 @@
                         <div class="container__up__Macode">
                             <div class="lap"><img class="black" src="./assets/black.png" alt=""></div>
                             <div class="Macode">
-                                <p>Macode</p>
+                                <p>#{besementslide.Macode}</p>
                             </div>
                         </div>
                         <div class="Macode__text">
-                            <p>Tutorials</p>
-                            <p>Case Studies</p>
-                            <p> Resources</p>
+                            <p>#{params.tutorials}</p>
+                            <p>#{params.cases}</p>
+                            <p>#{params.resourses}</p>
                         </div>
                     </div>
                     <div class="basement__container__low">
