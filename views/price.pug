@@ -6,12 +6,15 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{obj.title}
     body 
+
         <div>
             <h1>#{obj.title} (#{obj.id})</h1>
-            form(method="POST" action='/' + obj.id + '?' + "title=" + obj.title )
-                <input value=#{obj.title} /> <br />
-                <input value=#{obj.price} /> <br />
-                <input type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
-                <button>Изменить</button>
+                input(id="title",type='text', placeholder='Name', name='name', value=obj.title)
+                <br />
+                <input id="price" value=#{obj.price} /> <br />
+                <input id="new" type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
+                button(type='button', onclick='sendParams("'+ obj.id +'")' ) PressMe
             
+            script
+                include ../scripts/send.js
         </div>
