@@ -169,31 +169,33 @@ width: 300px;
 }
 .FAQS__text h1{
   font-size: 20px;
-  background-color: coral;
+ color: coral;
 }
 .FAQs_container__white-lap{
   width:30px;
   height: 30px;
 } 
 @media screen and (max-width: 780px) {
-  .body{
+  .slide{
     display: flex;
     flex-direction: column;
     
   }
-  .first-slide {
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .left-part {
     width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    height: 50vh;
   }
   .right-part {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+  }
+  .men{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }
 
   .big-text {

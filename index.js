@@ -196,7 +196,7 @@ app.get("/", (req, res) => {
         Find:"02. Can I Find the right information faster?",
         How:"03. How to get insights from users?",
         develop:"04. Can I develop my website without code?",
-        Nullaw:"Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare odio justo, ac efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.",
+        Nulla:"Nulla lectus lectus, suscipit at posuere sit amet, imperdiet sit amet sapien. Donec ornare odio justo, ac efficitur enim fermen. Nam enim ligula, lacinia vitae venenatis quis, suscipit id augue.",
       },
       besementslide:{
         upgrading:"Start upgrading your skills free for this month",

@@ -8,7 +8,10 @@ BlackLap.onclick = function (e) {
 const thirdSlide = document.getElementById("third-slide");
 const fourSlide = document.getElementById("four_slide");
 const threeButton = document.getElementById("three");
-
+threeButton.onclick = function (e){
+let div = document.querySelector("div")
+let p = div.querySelector("p");
+}
 window.addEventListener("scroll", function () {
   // console.log(this.window.pageYOffset, thirdSlide.scrollHeight)
   if (window.pageYOffset >= 670) {
@@ -280,3 +283,4 @@ for (let button of buttons) {
 function close(e) {
   console.log(e);
 }
+
