@@ -4,8 +4,12 @@ const path = require("path");
 const axios = require("axios");
 const expressip = require("express-ip");
 app.use(expressip().getIpInfoMiddleware);
+const users = require("./files/users.json");
+const jwt = require("jsonwebtoken");
+const auth = require("./middleware/auth");
 
 const PORT = 8000;
+const SECRET_KEY = "test_123";
 
 app.use(express.json());
 app.use(express.static(__dirname));
@@ -76,9 +80,9 @@ let ruarr = [
     title: "бизнес",
     price: "1800рублей",
     list: [
-    "1 Модуль Javascript",
-"1 Модуль Человеческих ресурсов",
-"2 Модуля Отделов продаж",
+      "1 Модуль Javascript",
+      "1 Модуль Человеческих ресурсов",
+      "2 Модуля Отделов продаж",
     ],
     isNew: false,
   },
@@ -86,18 +90,32 @@ let ruarr = [
 
 app.get("/:id", (req, res) => {
   const { id } = req.params;
+  let { lang } = req.query;
+
+  lang = lang || "en";
 
   let result;
 
-  for (let obj of arr) {
-    if (obj.id === Number(id)) {
-      result = obj;
+  if (lang === "en") {
+    for (let obj of arr) {
+      if (obj.id === Number(id)) {
+        result = obj;
+      }
+    }
+  } else {
+    for (let obj of ruarr) {
+      if (obj.id === Number(id)) {
+        result = obj;
+      }
     }
   }
   if (!result) {
     res.render("Error", {
       title: "Page Not Found - 404",
     });
+  }
+  if (lang) {
+    result.lang = lang;
   }
   res.render("price", {
     obj: result,
@@ -127,6 +145,18 @@ app.post("/:id", (req, res) => {
   return res.json({ id, title, result });
 });
 
+app.post("/api/auth/", (req, res) => {
+  let { login, password } = req.body;
+
+  if (login === users.admin.login) {
+    if (password === users.admin.password) {
+      return res.json(jwt.sign({ login }, SECRET_KEY, { expiresIn: "1h" }));
+    }
+  }
+
+  return res.json("aa");
+});
+
 app.get("/", (req, res) => {
   // console.log(req.ipInfo);
 
@@ -134,7 +164,7 @@ app.get("/", (req, res) => {
 
   if (lang === "ru") {
     res.render("main", {
-      prices: arr,
+      prices: ruarr,
       title: "Халява",
       lang: "en",
       params: {

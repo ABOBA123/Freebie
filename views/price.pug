@@ -1,23 +1,29 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{obj.title}
-    body 
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../styles/send.css")
+    if(obj)
+        if(obj.title)  
+            title #{obj.title}
+body 
+    <div class="price-main">
+        <h1>#{obj.title} (#{obj.id})</h1>
 
-        <div>
-            <h1>#{obj.title} (#{obj.id})</h1>
-
-                input(id="title",type='text', placeholder='Name', name='name', value=obj.title)
-                <br />
-                <input id="price" value=#{obj.price} /> <br />
-                <input id="new" type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
-                button(type='button', onclick='sendParams("'+ obj.id +'")' ) PressMe
-                <a  href="?ruarr" value =#{obj.ruarr}>ru</a>
-                <a href="">eng</a>
-                //- <a class="asd", value=obj.ruarr> ru  </a>
-            script
-                include ../scripts/send.js
-        </div>
+            input(id="title",type='text', placeholder='Name', name='name', value=obj.title)
+            <br />
+            <input id="price" value=#{obj.price} /> <br />
+            <input id="new" type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
+            button(type='button', onclick='sendParams("'+ obj.id +'")' ) PressMe
+            if(obj)
+                if(obj.lang)
+                    if(obj.lang === 'ru')
+                        <a href="?lang=en">eng</a>
+                    else 
+                        <a href="?lang=ru" value =#{obj.ruarr}>ru</a>
+      
+        script
+            include ../scripts/send.js
+    </div>
