@@ -9,12 +9,15 @@ html(lang="en")
 
         <div>
             <h1>#{obj.title} (#{obj.id})</h1>
+
                 input(id="title",type='text', placeholder='Name', name='name', value=obj.title)
                 <br />
                 <input id="price" value=#{obj.price} /> <br />
                 <input id="new" type="checkbox" value=#{obj.isNew} /> Является новым блоком* <br />
                 button(type='button', onclick='sendParams("'+ obj.id +'")' ) PressMe
-            
+                <a  href="?ruarr" value =#{obj.ruarr}>ru</a>
+                <a href="">eng</a>
+                //- <a class="asd", value=obj.ruarr> ru  </a>
             script
                 include ../scripts/send.js
         </div>
