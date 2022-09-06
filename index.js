@@ -24,6 +24,8 @@ let arr = [
   {
     id: 1,
     title: "DEVELOPMENT",
+    change:"Change title",
+    Changeprice:"Change price",
     price: "$10",
     list: ["1 Module Javascript", "1 Module Human Resources"],
     isNew: false,
@@ -31,7 +33,9 @@ let arr = [
   {
     id: 2,
     title: "IT & SOFTWARE",
+    change:"Change title",
     price: "$30",
+    Changeprice:"Change price",
     list: [
       "1 Module Javascript",
       "1 Module Human Resources",
@@ -44,7 +48,9 @@ let arr = [
   {
     id: 3,
     title: "BUSINESS",
+    change:"Change title",
     price: "$30",
+    Changeprice:"Change price",
     list: [
       "1 Module Javascript",
       "1 Module Human Resources",
@@ -58,14 +64,18 @@ let ruarr = [
   {
     id: 1,
     title: "развитие",
+    change:"Изменить название",
     price: "600 рублей",
+    Changeprice:"Изменить название",
     list: ["1 Модуль Javascript", "1 Модуль Людские ресурсы"],
     isNew: false,
   },
   {
     id: 2,
     title: "ИТ И ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ",
+    change:"Изменить название",
     price: "1800рублей",
+    Changeprice:"Изменить название",
     list: [
       "1 Модуль Javascript",
       "1 Модуль Человеческих ресурсов",
@@ -78,7 +88,9 @@ let ruarr = [
   {
     id: 3,
     title: "бизнес",
+    change:"Изменить название",
     price: "1800рублей",
+    Changeprice:"Изменить название",
     list: [
       "1 Модуль Javascript",
       "1 Модуль Человеческих ресурсов",

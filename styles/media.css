@@ -16,6 +16,28 @@
     background-clip: inherit;
     background-size: 100%;
   }
+  .lang_usa{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .russian{
+    width: 30px;
+    height: 30px;
+  }
+  .Usa{
+    width: 30px;
+    height: 30px;
+  }
+  .lang{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .line-first {
     width: 500px;
   }
@@ -167,9 +189,14 @@ width: 300px;
   font-size: 25px;
 }
 }
-.FAQS__text h1{
+.FAQS__text{
   font-size: 20px;
  color: coral;
+}
+.FAQs_container__white-lap{
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
 }
 .FAQs_container__white-lap{
   width:30px;
@@ -192,7 +219,8 @@ width: 300px;
     justify-content: center;
   }
   .men{
-    width: 200px;
+    width: 250px;
+    position: relative;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -210,6 +238,7 @@ width: 300px;
   .list {
     right: 0;
     left: 30px;
+  
   }
   .header {
     width: 500px;
