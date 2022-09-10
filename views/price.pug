@@ -21,14 +21,17 @@ body
             <p class="change"> #{obj.Changeprice} </p>
             <br />
             <input class="price" id="price" value=#{obj.price} /> <br />
-            <input class="checkbox"  id="new" type="checkbox" value=#{obj.isNew} />Is a new block* <br />
+            <div class="checkbox_content">
+               <input class="checkbox_input"  id="new" type="checkbox" value=#{obj.isNew} />Is a new block* 
+            </div>
+            <br />
             button(class="PressMe" type='button', onclick='sendParams("'+ obj.id +'")' ) PressMe
             if(obj)
                 if(obj.lang)
                     if(obj.lang === 'ru')
-                        <a class="ru" href="?lang=en">eng</a>
+                        <a id="lang" class="ru" href="?lang=en">eng</a>
                     else 
-                        <a class="ru" href="?lang=ru" value =#{obj.ruarr}>ru</a>
+                        <a id="lang" class="ru" href="?lang=ru" value =#{obj.ruarr}>ru</a>
       
         script
             include ../scripts/send.js

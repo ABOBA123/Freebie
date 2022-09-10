@@ -24,8 +24,8 @@ let arr = [
   {
     id: 1,
     title: "DEVELOPMENT",
-    change:"Change title",
-    Changeprice:"Change price",
+    change: "Change title",
+    Changeprice: "Change price",
     price: "$10",
     list: ["1 Module Javascript", "1 Module Human Resources"],
     isNew: false,
@@ -33,9 +33,9 @@ let arr = [
   {
     id: 2,
     title: "IT & SOFTWARE",
-    change:"Change title",
+    change: "Change title",
     price: "$30",
-    Changeprice:"Change price",
+    Changeprice: "Change price",
     list: [
       "1 Module Javascript",
       "1 Module Human Resources",
@@ -48,9 +48,9 @@ let arr = [
   {
     id: 3,
     title: "BUSINESS",
-    change:"Change title",
+    change: "Change title",
     price: "$30",
-    Changeprice:"Change price",
+    Changeprice: "Change price",
     list: [
       "1 Module Javascript",
       "1 Module Human Resources",
@@ -64,18 +64,18 @@ let ruarr = [
   {
     id: 1,
     title: "развитие",
-    change:"Изменить название",
+    change: "Изменить название",
     price: "600 рублей",
-    Changeprice:"Изменить название",
+    Changeprice: "Изменить название",
     list: ["1 Модуль Javascript", "1 Модуль Людские ресурсы"],
     isNew: false,
   },
   {
     id: 2,
     title: "ИТ И ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ",
-    change:"Изменить название",
+    change: "Изменить название",
     price: "1800рублей",
-    Changeprice:"Изменить название",
+    Changeprice: "Изменить название",
     list: [
       "1 Модуль Javascript",
       "1 Модуль Человеческих ресурсов",
@@ -88,9 +88,9 @@ let ruarr = [
   {
     id: 3,
     title: "бизнес",
-    change:"Изменить название",
+    change: "Изменить название",
     price: "1800рублей",
-    Changeprice:"Изменить название",
+    Changeprice: "Изменить название",
     list: [
       "1 Модуль Javascript",
       "1 Модуль Человеческих ресурсов",
@@ -136,16 +136,29 @@ app.get("/:id", (req, res) => {
 
 app.post("/:id", (req, res) => {
   const { id } = req.params;
-  const { title, price, isNew } = req.query;
+  const { title, price, isNew, lang } = req.query;
 
   let result;
 
-  for (let obj of arr) {
-    if (obj.id === Number(id)) {
-      obj.title = title;
-      obj.price = price;
-      // obj.isNew = isNew;
-      result = obj;
+  console.log(id, lang);
+
+  if (lang === "ru") {
+    for (let obj of ruarr) {
+      if (obj.id === Number(id)) {
+        obj.title = title;
+        obj.price = price;
+        // obj.isNew = isNew;
+        result = obj;
+      }
+    }
+  } else {
+    for (let obj of arr) {
+      if (obj.id === Number(id)) {
+        obj.title = title;
+        obj.price = price;
+        // obj.isNew = isNew;
+        result = obj;
+      }
     }
   }
   if (!result) {
