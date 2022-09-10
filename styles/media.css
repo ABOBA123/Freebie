@@ -206,46 +206,209 @@ width: 300px;
   .slide{
     display: flex;
     flex-direction: column;
-    
+    height: 200vh;
   }
   .left-part {
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .black-button button{
+    left:30px;
+    bottom: 100px;
+    position: absolute;
+
   }
   .right-part {
     width: 100%;
-    height: 50vh;
+    height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
   }
   .men{
-    width: 250px;
+    width: 450px;
     position: relative;
+    z-index: 20;
     display: flex;
     justify-content: center;
-    margin: auto;
+    bottom: 0;
   }
-
+  .create{
+    font-size: 17px;
+    font-weight: 500;
+  }
   .big-text {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-top: 60px;
     line-height: 30px;
+    width: 500px;
+  }
+  .sponsors-block img{
+    width: 150px;
   }
   .big-text p {
     padding: 0;
     margin: 0;
   }
   .list {
-    right: 0;
-    left: 30px;
-  
+    position: absolute;
+    display: flex;
+   align-items: center;
+  }
+  .Name{
+    bottom: 0;
+    left: 0;
   }
   .header {
     width: 500px;
     height: 100px;
   }
+  .line-first{
+    position: absolute;
+    width: 600px;
+  }
   .header p {
     font-size: 18px;
     font-weight: 200px;
+  }
+  .third-slide{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .right-slide{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+ justify-content: center;
+ position: relative;
+ align-items: center;
+
+  }
+  .three-button{
+display: flex;
+position: absolute;
+
+  }
+  .left-slide{
+    width: 100%;
+    height: 53vh;
+  }
+  .button_one{
+    width: 200px;
+    height: 200px;
+  }
+  .foryou{
+    width: 300px;
+    font-size: 35px;
+    
+  }
+  .slide-3{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .container{
+    position: absolute;
+    bottom: -80px;
+    margin: auto;
+
+  }
+  .little-container{
+display: flex;
+align-items: flex-start;
+justify-content: center;
+  }
+  .block__big-text h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .slide-blackman{
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .slide-blackman_big_block{
+    display: flex;
+    flex-direction: column;
+  }
+  .block__two-element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .block__University{
+    margin: 20px;
+    font-size: 17px;
+
+  }
+  .block__Showcase{
+    font-size: 17px;
+  }
+  .block__big-text{
+    font-size: 23px;
+  }
+  .window-2{
+    top: 0;
+    margin: auto;
+  }
+  .slide-blackman_black-block{
+    margin-bottom: 100px;
+  }
+  .three_button_row__button{
+
+    width: 300px;
+    height: 300px;
+  }
+  .with-thee-button__three_button_row{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+  }
+  .with-thee-button{
+    height: 700vh;
+    position:absolute;
+  }
+  .FAQS__text h1{
+    font-size: 10px;
+  }
+  .FAQs_content{
+    width: 20px;
+    font-size: 10px;
+  }
+  .basement-slide{
+    height: 150vh;
+    
+  }
+  .slide__yellow_block{
+    width: 600px;
+    height:600px;
+    
+  }
+  .yellow_block__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__Start{
+    width: 600px;
+    font-size: 15px;
+    margin: auto;
+  }
+  .Star__p{
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
   }
 }
