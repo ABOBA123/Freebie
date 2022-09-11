@@ -100,7 +100,7 @@ let ruarr = [
   },
 ];
 
-app.get("/:id", (req, res) => {
+app.get("/:id", auth, (req, res) => {
   const { id } = req.params;
   let { lang } = req.query;
 
@@ -172,6 +172,7 @@ app.post("/:id", (req, res) => {
 
 app.post("/api/auth/", (req, res) => {
   let { login, password } = req.body;
+  console.log(1, login, password);
 
   if (login === users.admin.login) {
     if (password === users.admin.password) {
@@ -308,6 +309,13 @@ app.get("/", (req, res) => {
     });
   }
 });
+
+app.get("/form/admin", (req, res) => {
+  res.render("adminForm");
+});
+
+// Создать новый путь для авторизации админа
+// Создать новый путь админки с блоками
 
 app.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
