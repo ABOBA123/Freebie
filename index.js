@@ -171,8 +171,8 @@ app.post("/:id", (req, res) => {
 });
 
 app.post("/api/auth/", (req, res) => {
-  let { login, password } = req.body;
-  console.log(1, login, password);
+  console.log(req.body);
+  let { login, password } = req.query;
 
   if (login === users.admin.login) {
     if (password === users.admin.password) {
@@ -314,6 +314,9 @@ app.get("/form/admin", (req, res) => {
   res.render("adminForm");
 });
 
+app.get("/form/admin/blocks", auth, (req, res) => {
+  return res.json("Авторизован");
+});
 // Создать новый путь для авторизации админа
 // Создать новый путь админки с блоками
 
