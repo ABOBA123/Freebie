@@ -218,7 +218,7 @@ width: 300px;
   .black-button button{
     left:30px;
     bottom: 100px;
-    position: absolute;
+    display: flex;
 
   }
   .right-part {
@@ -364,7 +364,7 @@ justify-content: center;
   .three_button_row__button{
 
     width: 300px;
-    height: 300px;
+    height:400px;
   }
   .with-thee-button__three_button_row{
 
@@ -392,8 +392,18 @@ justify-content: center;
   }
   .slide__yellow_block{
     width: 600px;
-    height:600px;
+    height:500px;
     
+  }
+  .basement__container{
+    display: flex;  }
+  .basement__container__up{
+    display: flex;
+    flex-direction: column;
+  }
+  .basement__container__low{
+    display: flex;
+    flex-direction: column;
   }
   .yellow_block__container{
     display: flex;
@@ -411,4 +421,34 @@ justify-content: center;
     width: 400px;
     margin: auto;
   }
+  .active{
+    font-size: 12px;
+  }
+  .FAQs__content{
+    font-size: 10px;
+  }
+  .FAQs__text{
+    font-size: 15px;
+  }
+  .three_button_row__par{
+    font-size: 10px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .with-thee-button{
+    height: 70%;
+  }
+  .with-thee-button__text-one{
+    height: 30%;
+  }
+  .with-thee-button__text-two{
+
+  }
+  /* .container__DEVELOPMENT{
+    width: 400px;
+    height:400px;
+    border-radius: 10px;
+    background: #f4f4f4;
+  } */
 }
