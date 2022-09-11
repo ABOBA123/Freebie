@@ -100,7 +100,7 @@ let ruarr = [
   },
 ];
 
-app.get("/:id", auth, (req, res) => {
+app.get("/:id", (req, res) => {
   const { id } = req.params;
   let { lang } = req.query;
 
