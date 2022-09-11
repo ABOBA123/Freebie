@@ -19,6 +19,13 @@ body {
   top: 20px;
   width: 500px;
 }
+.m-top-40{
+  margin-top: 40px;
+}
+.fs-20{
+  font-size: 20px;
+  font-weight: 600;
+}
 .price-contauner {
   width: 600px;
   height: 650px;

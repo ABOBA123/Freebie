@@ -4,13 +4,21 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../styles/send.css")
         title Admin Panel
     body 
-        h1 Админ панель
-        input(id="login" type="text" placeholder="login")
+        <div class="price-main">
+    img( class="Line" src="../assets/Line 1.png", alt="")
+    <div class="price-contauner">
+    img( class="yellow-tabl" src="../assets/yellowtabl.png", alt="")
+    <div class="price-contauner__main"> 
+        h1(class="DEVELOPMENT") Админ панель
+        <p class="change"> Login:</p>
+        input(id="login" class="price" type="text" placeholder="login")
         br
-        input(id="password" type="password" placeholder="password")
+        <p class="change"> Password: </p>
+        input(id="password" class="price" type="password" placeholder="password")
         br
-        button(id="button") Authorization
+        button(id="button" class="PressMe m-top-40 fs-20") CONNECT
     script
         include ../scripts/auth.js
