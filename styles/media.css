@@ -444,4 +444,44 @@
     border-radius: 10px;
     background: #f4f4f4;
   } */
+  .white-button:hover{
+    width: 250px;
+    height:250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .men{
+    width: 350px;
+  }
+  .big-text{
+    width: 400px;
+    font-size: 20px;
+  }
+  .sponsors-block img {
+    width: 100px;
+  }
+  .header{
+    width: 400px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+  .three-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block__University{
+    width: 470px;
+    font-size: 14px;
+  }
+  .block__Showcase {
+    width: 470px;
+    font-size: 14px;
+  }
+  .three-button button {
+    margin: none;
+    width: 200px;
+    height: 200px;
+  }
 }

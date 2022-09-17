@@ -318,6 +318,7 @@ app.get("/form/admin/blocks", auth, (req, res) => {
   // return res.json("blocks");
   res.render("blocks");
 });
+
 // Создать новый путь для авторизации админа
 // Создать новый путь админки с блоками
 
