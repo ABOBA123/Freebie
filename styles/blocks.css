@@ -1,18 +1,22 @@
-.ADMIN_PANEL{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f4f4f4f4;
+.ADMIN_PANEL {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
 }
-.three-button{
-    display: flex;
-    flex-direction: row;
+.three-button {
+  display: flex;
+  flex-direction: row;
 }
-.button__panel{
-width: 200px;
-height: 200px;
-background: #ffff;
-border-radius: 10px;
+.button__panel {
+  width: 200px;
+  height: 200px;
+  background: #ffff;
+  border-radius: 10px;
+}
+
+.test {
+  color: red;
 }

@@ -314,7 +314,7 @@ app.get("/form/admin", (req, res) => {
   res.render("adminForm");
 });
 
-app.get("/form/admin/blocks", auth, (req, res) => {
+app.get("/form/admin/blocks", (req, res) => {
   // return res.json("blocks");
   res.render("blocks");
 });
